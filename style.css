@@ -1,66 +1,68 @@
-header { 
-    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.3);
+/* HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE */
+header {
+    font-family: Helvetica;
+    background-color:cornflowerblue;
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
+    position: -webkit-sticky;
     width:100%;
-    background-color: steelblue;
 }
 
 header h1{
+    display: inline-flex;
+    color: white;
     margin:0px;
-    padding: 12px 0px 12px 0px;
-    width: 20%;
-}
-
-header h1, nav{
+    text-align: center;
     vertical-align: middle;
-    font-family: Helvetica;
-    display: inline-block;
+    padding: 6px;
 }
 
 nav {
-    width: 79%;
-    background-color: rgb( 255, 255, 255, 0.3);
+    display: inline-flex;
 }
 
 nav ul{
+    background-color: rgb(0, 0, 0, 0.5);
+    display: inline-flex;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
 }
 
-nav li {
-    border-right: 1px solid rgb(255, 255, 255, 0.3);
-    float: left;
-}
-
 nav a {
+    color: white;
     padding: 1px 15px 1px 15px;
     line-height: 3em; 
-    color: black;
-    display: block;
+    display: inline-flex;
     text-decoration: none;
 }
 
-.active {
+nav a.active {
     color: white;
-    background-color: rgb(0, 0, 0, 0.65);
+    background-color:cornflowerblue;
 }
 
 nav li a:hover{
-    color: white;
     background-color: rgb(0, 0, 0, 0.5);
 }
 
+/* BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE BODY STYLE */
+body{
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:12px;
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color: cornflowerblue;
+}
+
 main {
-    background-color: cornsilk;
+    padding: 8px;
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
 aside {
-    width: 25%;
-    float: right;
     background-color: aquamarine
 }
 
@@ -69,8 +71,6 @@ footer {
     clear:both;
     text-align: center;
 }
-
-
 
 
 
