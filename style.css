@@ -1,8 +1,8 @@
 body{
-        font-family: Helvetica;
+    font-family: Helvetica;
     margin:0;
     padding:0;
-    background-color: rgb(242,246,252);
+    background-color: rgb(193,203,222);
 }
 
 /* HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE */
@@ -11,7 +11,7 @@ body{
     display: flex;
     background-color: rgb(102,153,255, 0.6);
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #top img{
@@ -28,6 +28,21 @@ body{
     color: white;
     text-align: center;
     vertical-align: middle;
+    margin-right: auto;
+}
+
+#buttons button{
+    cursor: pointer;
+    color: rgb(0,0,0, 0.6);
+    border:0px;
+    padding: 16px;
+    text-decoration: none;
+    background-color: rgb(255,255,255, 0.5);
+    border-radius: 10px;
+    transition: 0.125s;
+	-webkit-transition: 0.125s;
+	-moz-transition: 0.125s;
+	-o-transition: 0.125s;
 }
 
 header {
@@ -39,28 +54,10 @@ header {
     position: sticky;
     top: 0;
     position: -webkit-sticky;
-    outline: solid 2px rgb(0, 0, 0, 0.2);
+
     display: flex;
     align-items: center;
     justify-items: flex-start;
-}
-
-#buttons{
-}
-
-header button{
-    cursor: pointer;
-    color: rgb(0,0,0, 0.6);
-    border:0px;
-    padding: 16px;
-    text-decoration: none;
-    background-color: rgb(255,255,255, 0.5);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: 0.125s;
-	-webkit-transition: 0.125s;
-	-moz-transition: 0.125s;
-	-o-transition: 0.125s;
 }
 
 nav {
@@ -86,8 +83,7 @@ nav a {
     color: rgb(255,255,255, 0.6);
     display: inline-flex;
     text-decoration: none;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     transition: 0.125s;
 	-webkit-transition: 0.125s;
 	-moz-transition: 0.125s;
@@ -100,11 +96,8 @@ nav a.active {
     color: rgb(0,0,0, 0.7);
 }
 
-nav li a:hover, header button:hover{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+nav li a:hover, #buttons button:hover{
+    border-radius:20px;
     background-color: rgb(0,0,0, 0.5);
     transition: 0.25s;
 	-webkit-transition: 0.25s;
@@ -117,10 +110,9 @@ nav li a:hover, header button:hover{
 
 main, footer {
    /* margin:20px; */
-    margin-top: 3px;
+    margin-top: 0px;
     margin-bottom: 0px;
-    border-radius: 16px;
-    padding-bottom: 16px; 
+    padding-bottom: 20px; 
     padding-top: 16px;
 }
 
@@ -128,32 +120,33 @@ main {
     z-index: 1;
     position: relative;
     background-color: white;
-    border-top: solid 1px rgb(102,153,255);
     border-bottom: solid 1px rgb(102,153,255);
 }
 
 footer {
+    padding-left: 40px;
+    padding-right: 40px;
     z-index: 0;
     position:sticky;
     bottom: 0;
     text-align: center;
     background-color: rgb(193,203,222);
     color: rgb(255,255,255);
-    border-left: solid 1px rgb(102,153,255, 0.5);
-    border-right: solid 1px rgb(102,153,255, 0.5);
 }
 
 aside {
 
 }
 
+h1, h2, h3, p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 /* PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE */
 
 #home h1{
     background-color: coral;
-}
-#home p{
-    margin:20px;
 }
 
 #travel h1{
