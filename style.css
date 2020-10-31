@@ -38,6 +38,7 @@ body{
 }
 
 #buttons button{
+    font-size: 1em;
     font-weight: 600;
     cursor: pointer;
     color: rgb(0,0,0, 0.7);
@@ -67,8 +68,6 @@ header {
 }
 
 nav {
-    margin: 0px;
-    padding: 0px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -101,10 +100,9 @@ nav a.active {
     color: rgb(0,0,0, 0.8);
     border-radius: 0px;
     border-bottom: 3px solid rgb(102,153,255);
-    border-radius:10px;
 }
 
-nav li a:hover, #buttons button:hover{
+nav a:hover, #buttons button:hover{
     border-radius:20px;
     background-color: rgb(102,153,255, 0.7);
     transition: 0.25s;
@@ -115,18 +113,18 @@ nav li a:hover, #buttons button:hover{
     border-bottom: 3px solid rgb(102,153,255);
 }
 
-/* END OF HEADER END OF HEADER END OF HEADEREND OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER */
-
-#title-bar{
-    font-family: Palatino;
-    font-size: 24px;
-    font-weight: 700;
-    margin-top:0px;
-    margin-bottom:0px;
-    padding: 0.6em;
-    background-color: rgb(255,128,102, 0.5);
-    width: 100%;
+nav a:focus, #buttons button:focus{
+    border-radius:20px;
+    background-color: rgb(2,53,155, 0.7);
+    transition: 0.25s;
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+    color: white;
+    border-bottom: 3px solid black;
 }
+
+/* END OF HEADER END OF HEADER END OF HEADEREND OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER */
 
 main, footer {
     margin-top: 0px;
@@ -143,20 +141,29 @@ main {
     margin-bottom: 0px;
     padding-bottom: 0px;
     z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
 }
 
-layout{
-    display: flex;
+#title-bar{
+    font-family: Palatino;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding: 0.6em;
+    background-color: rgb(255,128,102, 0.5);
+    grid-column: 1/3;
 }
 
-aside{
-    background-color: aqua;
-    width: 15%;
+
+article, aside{
+    background-color: bisque;
+    padding-left: 15%;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
-article {
-    width: 20%;
-}   
 
 footer {
     padding-top: 16px;
@@ -193,7 +200,6 @@ footer {
 	-webkit-transition: 0.25s;
 	-moz-transition: 0.25s;
 	-o-transition: 0.25s;
-      
 }
 
 .modal input[type=text]:focus, .modal input[type=password]:focus {
@@ -211,7 +217,7 @@ footer {
     margin: 5px auto 22px auto;
 }
 
-#formbtns {
+.formbtns {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -286,11 +292,11 @@ footer {
   z-index: 10;
 }
 
-#modal-head p{
+.modal-head p{
     margin-left: 0;
 }
 
-#modal-head {
+.modal-head {
     margin-left:17%;
     padding-top: 20px;
 }
