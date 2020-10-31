@@ -6,13 +6,14 @@ body{
 
 /* HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE HEADER STYLE */
 #top{
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 0px;
+    background-color: white;
 }
 
 #top img{
@@ -55,7 +56,6 @@ header {
     margin: 0px;
     padding: 0px;
     padding-left: 20px;
-    z-index: 2;
     position: sticky;
     top: 0;
     background-color: rgb(255,255,255, 0.97);
@@ -63,7 +63,7 @@ header {
     display: flex;
     align-items: center;
     justify-items: flex-start;
-    outline: 2px solid rgb(102,153,255, 0.75);
+     z-index: 2;
 }
 
 nav {
@@ -98,10 +98,10 @@ nav a {
 
 nav a.active {
     pointer-events: none;
-    color: rgb(0,0,0, 0.7);
+    color: rgb(0,0,0, 0.8);
     border-radius: 0px;
     border-bottom: 3px solid rgb(102,153,255);
-    background-color: rgb(102,153,255, 0.2);
+    border-radius:10px;
 }
 
 nav li a:hover, #buttons button:hover{
@@ -117,6 +117,17 @@ nav li a:hover, #buttons button:hover{
 
 /* END OF HEADER END OF HEADER END OF HEADEREND OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER END OF HEADER */
 
+#title-bar{
+    font-family: Palatino;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding: 0.6em;
+    background-color: rgb(255,128,102, 0.5);
+    width: 100%;
+}
+
 main, footer {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -124,42 +135,48 @@ main, footer {
 }
 
 main {
+    width: 100%;
     padding-top: 0px;
-    z-index: 1;
     position: relative;
     background-color: white;
     border-bottom: solid 2px rgb(102,153,255, 0.75);
     margin-bottom: 0px;
     padding-bottom: 0px;
+    z-index: 1;
 }
+
+layout{
+    display: flex;
+}
+
+aside{
+    background-color: aqua;
+    width: 15%;
+}
+
+article {
+    width: 20%;
+}   
 
 footer {
     padding-top: 16px;
     padding-left: 40px;
     padding-right: 40px;
-    z-index: 0;
     position:sticky;
     bottom: 0;
     text-align: center;
     background-color: rgb(193,203,222);
     color: rgb(255,255,255);
-}
-
-h1#title-bar{
-    font-family: Palatino;
-    font-size: 51px;
-    font-weight: 700;
-    margin-top:0px;
-    margin-bottom:0px;
-    padding: 0.6em;
-    background-color: rgb(255,128,102, 0.5);
+    clear: both;
+     z-index: 0;
+    width: 100%;
 }
 
 /* PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE */
 
 
 
-/* SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM SIGNUP FORM */
+/* MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL */
  
 * {box-sizing: border-box}
 
@@ -172,6 +189,10 @@ h1#title-bar{
     border-radius:10px;
       border-bottom: 2px solid rgb(102,153,255);
       width:66%;
+          transition: 0.25s;
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
       
 }
 
@@ -196,7 +217,7 @@ h1#title-bar{
     margin-bottom: 30px;
 }
 
-.modal label, .modal p, .modal h1{
+.modal label, .modal h1, .modal p{
     margin-left:17%;
 }
 
@@ -245,10 +266,7 @@ h1#title-bar{
   height: 100%; 
     overflow: hidden;
   background-color: rgb(0,0,0, 0.7);
-    transition: 1s;
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-o-transition: 1s;
+   transition: display 2s;
 }
 
 /* Modal Content/Box */
@@ -268,4 +286,12 @@ h1#title-bar{
   z-index: 10;
 }
 
+#modal-head p{
+    margin-left: 0;
+}
+
+#modal-head {
+    margin-left:17%;
+    padding-top: 20px;
+}
 
