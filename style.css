@@ -139,10 +139,7 @@ nav a:focus, #buttons button:focus{
         display:flex;
         height: 100%;
         align-items: center;
-        justify-content: center;
         grid-column: 3/4;
-        z-index: 100;
-        padding-right: 6px;
     }
     
     .nav-toggle-label span,
@@ -162,11 +159,11 @@ nav a:focus, #buttons button:focus{
     }
     
     .nav-toggle-label span::before{
-        bottom: 7px;
+        top: 7px;
     }
     
     .nav-toggle-label span::after{ 
-        top:7px;
+        bottom: 7px;
     }
     
     #logo h1{
