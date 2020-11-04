@@ -16,18 +16,7 @@ header {
     grid-template-columns: 1fr 3fr 1fr;
     grid-gap: 20px;
     z-index: 2;
-}
-
-header img{
-    display: inline;
-    height: 35px;
-}
-
-h1{
-    margin:0px;
-    padding: 0px;
-    color: rgb(0,0,0, 0.82);
-    min-width: 150px;
+    border-bottom: 2px solid rgb(102,153,255, 0.9);
 }
 
 #logo{
@@ -35,6 +24,15 @@ h1{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+nav {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #buttons{
@@ -42,7 +40,20 @@ h1{
     flex-wrap: wrap;
     pointer-events: all;
     grid-column: 3/4;
+    grid-row: 1/2;
     align-items: center;
+}
+
+#logo img{
+    display: inline;
+    height: 35px;
+}
+
+#logo h1{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(0,0,0, 0.82);
+    min-width: 150px;
 }
 
 #buttons button{
@@ -62,15 +73,6 @@ h1{
     min-width: 93px;
 }
 
-/* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAVNAV NAV NAV NAV NAV NAV NAV  */
-
-nav {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 nav ul{
     margin: 0px;
     padding: 0px;
@@ -82,7 +84,7 @@ nav ul{
 nav a {
     font-weight: 700;
     margin: 0px;
-    padding: 16px;
+    padding: 17px;
     color: rgb(0,0,0, 0.4);
     display: inline-flex;
     text-decoration: none;
@@ -120,6 +122,100 @@ nav a:focus, #buttons button:focus{
 	-o-transition: 0.25s;
     color: white;
     border-bottom: 3px solid black;
+}
+
+.nav-toggle, .nav-toggle-label{
+    display: none;
+}
+
+
+/* MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER */
+@media only screen and (max-width: 768px) {
+    header{
+        grid-template-columns: 2fr 2.3337fr 1fr;
+    }
+    
+    .nav-toggle-label{
+        display:flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        grid-column: 3/4;
+        z-index: 100;
+        padding-right: 6px;
+    }
+    
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after{
+        display: block;
+        background: black;
+        height: 2px;
+        width: 2em;
+        position: relative;
+    }
+    
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after{
+        content: ' ';
+        position: absolute;
+    }
+    
+    .nav-toggle-label span::before{
+        bottom: 7px;
+    }
+    
+    .nav-toggle-label span::after{ 
+        top:7px;
+    }
+    
+    #logo h1{
+        min-width: 0;
+        font-size: 20px;
+    }
+    
+    #buttons{
+        grid-column: 2/3;
+        justify-content: center;
+    }
+    
+    #buttons button{
+        min-width: 0px;
+        width: 50%;
+        font-size: 14.3583px;
+        padding: 8px
+    }
+    
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        border-top: 2px solid cornflowerblue;
+    }
+    
+    nav{
+        transform: scale(1, 0);
+        transition: transform 400ms ease-in-out;
+        transform-origin: bottom;
+        background-color: white;
+        position: fixed;
+        bottom:0;
+        width: 100vw;
+    }
+    
+    nav li{
+        text-align: center;
+        opacity: 0;
+        transition: opacity 150ms;
+    }
+    
+    .nav-toggle:checked ~ nav{
+        transform: scale(1,1);
+    }
+    
+    .nav-toggle:checked ~ nav li{
+        opacity: 1;
+        transition: opacity 250ms;
+    }
 }
 
 
@@ -329,14 +425,12 @@ main#home section{
     border: 1px solid black;
 }
 
-
 article, aside{
     border: 1px solid black;
     padding-left: 15%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 footer {
     padding-top:40px;
