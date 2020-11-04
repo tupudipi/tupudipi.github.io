@@ -8,16 +8,27 @@
     <link rel="icon" href="icon.png">
  </head>
     
-    <body>
-        <div id="top">
+<body>
+        <header>
             <div id="logo">
                 <img src="icon.png" alt="icon">
                 <h1>Tudi web</h1>
             </div>
+            
             <div id="buttons">
                 <button onclick="document.getElementById('id01').style.display='block'">Log in</button>
                 <button onclick="document.getElementById('id02').style.display='block'">Sign up</button>
             </div>
+                      
+            <nav> 
+                <ul>
+                    <li> <a href="index.html" class="active">Home</a> </li>
+                    <li> <a href="pagina1.html">Pagina 1</a> </li>
+                    <li> <a href=# >Pagina 2</a> </li>
+                    <li> <a href=# >Pagina 3</a></li>
+                    <li> <a href=# >Pagina 4</a></li>
+                </ul>
+            </nav>         
                     
         <!-- Sign Up form -->
         <div id="id02" class="modal">
@@ -71,20 +82,7 @@
                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
             </div>
         </form>
-            <script src="/js/scripts.js"></script>
         </div>
-        </div>
-        
-        <header>
-            <nav> 
-                <ul>
-                    <li> <a href="index.html">Home</a> </li>
-                    <li> <a href="pagina1.html" class="active">Pagina 1</a> </li>
-                    <li> <a href=# >Pagina 2</a> </li>
-                    <li> <a href=# >Pagina 3</a></li>
-                    <li> <a href=# >Pagina 4</a></li>
-                </ul>
-            </nav>
         </header>
         
         <main id="pagina1">
