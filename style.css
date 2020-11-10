@@ -407,7 +407,7 @@ main {
 
 #section1 {
   height: 500px;
-  background: url("https://upload.wikimedia.org/wikipedia/commons/0/0f/Corpus_Christi_College_New_Court%2C_Cambridge%2C_UK_-_Diliff.jpg")
+  background: url(Corpus_Christi_College_New_Court,_Cambridge,_UK_-_Diliff.jpg)
     center;
   background-size: cover;
 }
