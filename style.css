@@ -1,326 +1,329 @@
-body{
-    font-family: Arial;
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP TOP */
 header {
-    margin: 0px;
-    padding: 0px;
-    position: sticky;
-    top:0;
-    background-color: rgb(255,255,255, 0.97);
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-gap: 20px;
-    z-index: 2;
-    border-bottom: 2px solid rgb(102,153,255, 0.9);
+  margin: 0px;
+  padding: 0px;
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255, 0.97);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 20px;
+  z-index: 2;
+  border-bottom: 2px solid rgb(102, 153, 255, 0.9);
 }
 
-#logo{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    grid-column: 1/2;
-    grid-row: 1/2;
+#logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 nav {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-right: auto;
-    margin-left: auto;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-#buttons{
-    display: flex;
-    flex-wrap: wrap;
-    pointer-events: all;
-    grid-column: 3/4;
-    grid-row: 1/2;
-    align-items: center;
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  pointer-events: all;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  align-items: center;
 }
 
-#logo img{
-    display: inline;
-    height: 35px;
+#logo img {
+  display: inline;
+  height: 35px;
 }
 
-#logo h1{
-    margin: 0px;
-    padding: 0px;
-    color: rgb(0,0,0, 0.82);
-    min-width: 150px;
+#logo h1 {
+  margin: 0px;
+  padding: 0px;
+  color: rgb(0, 0, 0, 0.82);
+  min-width: 150px;
 }
 
-#buttons button{
-    font-size: 1em;
-    font-weight: 600;
-    cursor: pointer;
-    color: rgb(0,0,0, 0.7);
-    border: 0px;
-    border-bottom: 3px solid white;
-    padding: 16px;
-    text-decoration: none;
-    background-color: rgb(255,255,255, 0.5);
-    transition: 0.125s;
-	-webkit-transition: 0.125s;
-	-moz-transition: 0.125s;
-	-o-transition: 0.125s;
-    min-width: 93px;
+#buttons button {
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(0, 0, 0, 0.7);
+  border: 0px;
+  border-bottom: 3px solid white;
+  padding: 16px;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255, 0.5);
+  transition: 0.125s;
+  -webkit-transition: 0.125s;
+  -moz-transition: 0.125s;
+  -o-transition: 0.125s;
+  min-width: 93px;
 }
 
-nav ul{
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav a {
-    font-weight: 700;
-    margin: 0px;
-    padding: 17px;
-    color: rgb(0,0,0, 0.4);
-    display: inline-flex;
-    text-decoration: none;
-    transition: 0.125s;
-	-webkit-transition: 0.125s;
-	-moz-transition: 0.125s;
-	-o-transition: 0.125s;
-    border-bottom: 3px solid white;
+  font-weight: 700;
+  margin: 0px;
+  padding: 17px;
+  color: rgb(0, 0, 0, 0.4);
+  display: inline-flex;
+  text-decoration: none;
+  transition: 0.125s;
+  -webkit-transition: 0.125s;
+  -moz-transition: 0.125s;
+  -o-transition: 0.125s;
+  border-bottom: 3px solid white;
 }
 
 nav a.active {
-    pointer-events: none;
-    color: rgb(0,0,0, 0.8);
-    border-radius: 0px;
-    border-bottom: 3px solid rgb(102,153,255);
+  pointer-events: none;
+  color: rgb(0, 0, 0, 0.8);
+  border-radius: 0px;
+  border-bottom: 3px solid rgb(102, 153, 255);
 }
 
-nav a:hover, #buttons button:hover{
-    border-radius:20px;
-    background-color: rgb(102,153,255, 0.7);
-    transition: 0.25s;
-	-webkit-transition: 0.25s;
-	-moz-transition: 0.25s;
-	-o-transition: 0.25s;
-    color: white;
-    border-bottom: 3px solid rgb(102,153,255);
+nav a:hover,
+#buttons button:hover {
+  border-radius: 20px;
+  background-color: rgb(102, 153, 255, 0.7);
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  color: white;
+  border-bottom: 3px solid rgb(102, 153, 255);
 }
 
-nav a:focus, #buttons button:focus{
-    border-radius:10px;
-    background-color: rgb(2,53,155, 0.7);
-    transition: 0.25s;
-	-webkit-transition: 0.25s;
-	-moz-transition: 0.25s;
-	-o-transition: 0.25s;
-    color: white;
-    border-bottom: 3px solid black;
+nav a:focus,
+#buttons button:focus {
+  border-radius: 10px;
+  background-color: rgb(2, 53, 155, 0.7);
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  color: white;
+  border-bottom: 3px solid black;
 }
 
-.nav-toggle, .nav-toggle-label{
-    display: none;
+.nav-toggle,
+.nav-toggle-label {
+  display: none;
 }
-
 
 /* MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER */
 @media only screen and (max-width: 768px) {
-    header{
-        grid-template-columns: 2fr 2.3337fr 1fr;
-    }
-    
-    .nav-toggle-label{
-        display:flex;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        grid-column: 3/4;
-        cursor: pointer;
-    }
-    
-    .nav-toggle-label span,
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after{
-        display: block;
-        background: black;
-        height: 2px;
-        width: 2em;
-        position: relative;
-    }
-    
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after{
-        content: ' ';
-        position: absolute;
-    }
-    
-    .nav-toggle-label span::before{
-        top: 7px;
-    }
-    
-    .nav-toggle-label span::after{ 
-        bottom: 7px;
-    }
-    
-    
-    #logo h1{
-        min-width: 0;
-        font-size: 20px;
-    }
-    
-    #buttons{
-        grid-column: 2/3;
-        justify-content: center;
-    }
-    
-    #buttons button{
-        min-width: 0px;
-        width: 50%;
-        font-size: 14.3583px;
-        padding: 8px
-    }
-    
-    nav ul{
-        display:flex;
-        flex-direction: column;
-        border-top: 2px solid cornflowerblue;
-    }
-    
-    nav{
-        transform: scale(1, 0);
-        transition: transform 400ms ease-in-out;
-        transform-origin: bottom;
-        background-color: white;
-        position: fixed;
-        bottom:0;
-        width: 100vw;
-    }
-    
-    nav li{
-        text-align: center;
-        opacity: 0;
-        transition: opacity 150ms;
-    }
-    
-    .nav-toggle:checked ~ nav{
-        transform: scale(1,1);
-    }
-    
-    .nav-toggle:checked ~ nav li{
-        opacity: 1;
-        transition: opacity 250ms;
-    }
+  header {
+    grid-template-columns: 2fr 2.3337fr 1fr;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3/4;
+    cursor: pointer;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    display: block;
+    background: black;
+    height: 2px;
+    width: 2em;
+    position: relative;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: " ";
+    position: absolute;
+  }
+
+  .nav-toggle-label span::before {
+    top: 7px;
+  }
+
+  .nav-toggle-label span::after {
+    bottom: 7px;
+  }
+
+  #logo h1 {
+    min-width: 0;
+    font-size: 20px;
+  }
+
+  #buttons {
+    grid-column: 2/3;
+    justify-content: center;
+  }
+
+  #buttons button {
+    min-width: 0px;
+    width: 50%;
+    font-size: 14.3583px;
+    padding: 8px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid cornflowerblue;
+  }
+
+  nav {
+    transform: scale(1, 0);
+    transition: transform 400ms ease-in-out;
+    transform-origin: bottom;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  nav li {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 150ms;
+  }
+
+  .nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+  }
+
+  .nav-toggle:checked ~ nav li {
+    opacity: 1;
+    transition: opacity 250ms;
+  }
 }
 
-
 /* MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL  MODAL MODAL MODAL */
-.modal input[type=text], .modal input[type=password] {
+.modal input[type="text"],
+.modal input[type="password"] {
   padding: 15px;
   margin: 5px auto 22px auto;
   display: block;
   border: none;
   background: #f1f1f1;
-    border-radius:10px;
-      border-bottom: 2px solid rgb(102,153,255);
-      width:66%;
-          transition: 0.25s;
-	-webkit-transition: 0.25s;
-	-moz-transition: 0.25s;
-	-o-transition: 0.25s;
+  border-radius: 10px;
+  border-bottom: 2px solid rgb(102, 153, 255);
+  width: 66%;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
 }
 
-.modal input[type=text]:focus, .modal input[type=password]:focus {
+.modal input[type="text"]:focus,
+.modal input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
-    border-bottom: 2px dashed rgb(255,204,102);
-    border-radius:20px;
-    transition: 0.25s;
-	-webkit-transition: 0.25s;
-	-moz-transition: 0.25s;
-	-o-transition: 0.25s;
+  border-bottom: 2px dashed rgb(255, 204, 102);
+  border-radius: 20px;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
 }
 
-.modal input[type=checkbox]{
-    margin: 5px auto 22px auto;
+.modal input[type="checkbox"] {
+  margin: 5px auto 22px auto;
 }
 
 .formbtns {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.modal label, .modal p{
-    margin-left:17%;
+.modal label,
+.modal p {
+  margin-left: 17%;
 }
 
 .modal button {
-  color: rgb(0,0,0, 0.7);
+  color: rgb(0, 0, 0, 0.7);
   padding: 14px 20px;
   border: none;
   cursor: pointer;
-    border-bottom: 3px solid rgb(102,153,255);
-    transition: 0.25s;
-	-webkit-transition: 0.25s;
-	-moz-transition: 0.25s;
-	-o-transition: 0.25s;
-    border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 33%;
-    font-weight: 600;
+  border-bottom: 3px solid rgb(102, 153, 255);
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 33%;
+  font-weight: 600;
 }
 
-.cancelbtn:hover, .signupbtn:hover, .loginbtn:hover {
-    border-radius:20px;
-    transition: 0.25s;
-	-webkit-transition: 0.25s;
-	-moz-transition: 0.25s;
-	-o-transition: 0.25s;
-    color: white;
-    border-bottom: 3px solid rgb(102,153,255);
-    background-color: rgb(255,102,153);
+.form-cancel:hover,
+.formbtn:hover {
+  border-radius: 20px;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  color: white;
+  border-bottom: 3px solid rgb(102, 153, 255);
+  background-color: rgb(255, 102, 153);
 }
 
-.signupbtn:hover, .loginbtn:hover {
-    color: rgb(0,0,0);
-    background-color: rgb(153,255,102);
-    border-bottom: 3px solid rgb(102,153,255);
+.form-btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(153, 255, 102);
 }
 
 /* The Modal (background) */
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 3; 
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-    overflow: hidden;
-  background-color: rgb(0,0,0, 0.7);
-   transition: display 2s;
-    pointer-events: all;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0, 0.7);
+  pointer-events: all;
 }
 
 /* Modal Content/Box */
 .modal-content {
   position: relative;
   background-color: white;
-  margin: 5% auto 15% auto; 
-  border: 3px solid rgb(102,153,255);
-    min-width: 340px;
-    width: 50%;
-    max-width: 700px;
+  margin: 5% auto 15% auto;
+  border: 3px solid rgb(102, 153, 255);
+  min-width: 340px;
+  width: 50%;
+  max-width: 700px;
   border-radius: 20px;
-    padding: 16px;
-    pointer-events: all;
+  padding: 16px;
+  pointer-events: all;
 }
 
 .modal hr {
@@ -329,144 +332,172 @@ nav a:focus, #buttons button:focus{
   z-index: 10;
 }
 
-.modal-head p{
-    margin-left: 0;
+.modal-head p {
+  margin-left: 0;
 }
 
 .modal-head {
-    margin-left:17%;
+  margin-left: 17%;
 }
-
 
 /*  MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
-main, footer {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 20px; 
+main,
+footer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
 }
 
-main{
-    padding-top: 0px;
-    position: relative;
-    background-color: white;
-    border-bottom: solid 2px rgb(102,153,255, 0.75);
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: minmax(150px, 25%) 1fr;
-    grid-auto-rows: auto;
+main {
+  padding-top: 0px;
+  position: relative;
+  background-color: white;
+  border-bottom: solid 2px rgb(102, 153, 255, 0.75);
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  grid-auto-rows: auto;
 }
 
 @media only screen and (max-width: 768px) {
-    main{
-        grid-template-columns: 1fr;
-    }
-    
-    aside, article{
-        background-color: white;
-    }
-    
-    #title-bar{
-        grid-column: 1/2;
-    }
-    
-    #title-bar h1{
-        font-size: 38px;
-    }
-    
-    aside{
-        grid-column: 1/2;
-    }
-    
-    article{
-        grid-column: 1/2;
-    }
-}
-
-main#home{
-    background-color: aliceblue;
-    display: grid;
+  main {
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    grid-gap:60px;
-}
+  }
 
-main#home section{
-    margin:0;
-    padding:0;
-    border: 1px solid black;
+  aside,
+  article {
     background-color: white;
-    text-align: center;
-    max-width: 100%;
+  }
+
+  #title-bar {
+    grid-column: 1/2;
+  }
+
+  #title-bar h1 {
+    font-size: 38px;
+  }
+
+  aside {
+    grid-column: 1/2;
+  }
+
+  article {
+    grid-column: 1/2;
+  }
 }
 
-#section1{
-    height: 500px;
-    background: url("https://upload.wikimedia.org/wikipedia/commons/0/0f/Corpus_Christi_College_New_Court%2C_Cambridge%2C_UK_-_Diliff.jpg") center;
-    background-size:cover;
+#home {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 60px;
 }
 
-#section1 h2{
-    color: white;
+#home section {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  max-width: 100%;
 }
 
-#section2 ul{
-    padding: 0;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+#section1 {
+  height: 500px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/0/0f/Corpus_Christi_College_New_Court%2C_Cambridge%2C_UK_-_Diliff.jpg")
+    center;
+  background-size: cover;
 }
 
-#section2 ul li{
-    margin: 20px;
-    max-width: 25%;
+#section1 h2 {
+  color: white;
 }
 
-#section4 ul{
-    padding: 0;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+#section2 ul {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#section4 ul li{
-    margin: 20px;
-    max-width: 40%;
+#section2 ul li {
+  margin: 20px;
+  max-width: 25%;
 }
 
-#title-bar{
-    font-family: Palatino;
-    font-size: 24px;
-    font-weight: 700;
-    margin-top:0px;
-    margin-bottom:0px;
-    padding: 0.6em;
-    background-color: rgb(255,128,102, 0.5);
-    grid-column: 1/3;
-    border: 1px solid black;
+#section4 ul {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-article, aside{
-    border: 1px solid black;
-    padding: 20px;
+#section4 ul li {
+  margin: 20px;
+  max-width: 40%;
 }
 
+#title-bar {
+  font-family: Palatino;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0.6em;
+  background-color: rgb(255, 128, 102, 0.5);
+  grid-column: 1/3;
+  border: 1px solid black;
+}
 
+article,
+aside {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.scrollToTopBtn {
+  background-color: white;
+  border: 2px solid cornflowerblue;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+  z-index: 50;
+}
+
+.scrollToTopBtn:hover {
+  background-color: rgb(187, 211, 255);
+  transition: 0.2s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 footer {
-    padding-top:40px;
-    position:sticky;
-    bottom: 0;
-    text-align: center;
-    background-color: rgb(193,203,222);
-    color: rgb(255,255,255);
-    z-index: 0;
-    width: 100%;
+  padding-top: 40px;
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  background-color: rgb(193, 203, 222);
+  color: rgb(255, 255, 255);
+  z-index: 0;
+  width: 100%;
 }
 
 /* PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE PAGINI SECUNDARE */

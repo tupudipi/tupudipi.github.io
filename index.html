@@ -1,147 +1,204 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Pagină home</title>
-    <link rel="icon" href="icon.png">
- </head>
-    
-    <body>
-        <header>
-            <div id="logo">
-                <img src="icon.png" alt="icon">
-                <h1>Site web</h1>
-            </div>
-            
-            <div id="buttons">
-                <button onclick="document.getElementById('id01').style.display='block'">Log in</button>
-                <button onclick="document.getElementById('id02').style.display='block'">Sign up</button>
-            </div>
-             
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            
-            <nav> 
-                <ul>
-                    <li> <a href="index.html" class="active">Home</a> </li>
-                    <li> <a href="pagina1.html">Pagina 1</a> </li>
-                    <li> <a href=# >Pagina 2</a> </li>
-                    <li> <a href=# >Pagina 3</a></li>
-                    <li> <a href=# >Pagina 4</a></li>
-                    <li></li>
-                </ul>
-            </nav>   
-            
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>       
-                    
-        <!-- Sign Up form -->
-        <div id="id02" class="modal">
+    <link rel="icon" href="icon.png" />
+  </head>
 
+  <body>
+    <header>
+      <div id="logo">
+        <img src="icon.png" alt="icon" />
+        <h1>Site web</h1>
+      </div>
+
+      <div id="buttons">
+        <button id="loginbtn">Log in</button>
+        <button id="signupbtn">Sign up</button>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="pagina1.html">Pagina 1</a></li>
+          <li><a href="#">Pagina 2</a></li>
+          <li><a href="#">Pagina 3</a></li>
+          <li><a href="#">Pagina 4</a></li>
+        </ul>
+      </nav>
+
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+
+      <!-- Sign Up form -->
+      <div id="signup-modal" class="modal">
         <form class="modal-content" action="/action_page.php">
-            <div class="modal-head">
+          <div class="modal-head">
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
-            </div>
-            <hr>
+          </div>
+          <hr />
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <input type="text" placeholder="Enter Email" name="email" required />
 
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
 
           <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            required
+          />
 
-          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-            <hr>
-            <div class="formbtns">
-                <button type="submit" class="signupbtn">Sign Up</button>
-                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-            </div>
+          <p>
+            By creating an account you agree to our
+            <a href="#">Terms & Privacy</a>.
+          </p>
+          <hr />
+          <div class="formbtns">
+            <button type="submit" class="form-btn">Sign Up</button>
+            <button type="button" id="cancelbtn2" class="form-cancel">
+              Cancel
+            </button>
+          </div>
         </form>
-            <script src="/js/scripts.js"></script>
-        </div>
-        
-              <!-- Log In form -->
-        <div id="id01" class="modal">
+        <script src="/js/scripts.js"></script>
+      </div>
 
+      <!-- Log In form -->
+      <div id="login-modal" class="modal">
         <form class="modal-content" action="/action_page.php">
-            <div class="modal-head">
+          <div class="modal-head">
             <h1>Log In</h1>
             <p>Please fill in this form to log into your account.</p>
-            </div>
-            <hr>
+          </div>
+          <hr />
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <input type="text" placeholder="Enter Email" name="email" required />
 
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
 
           <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
           </label>
-                <hr>
-            <div class="formbtns">
-                <button type="submit" class="loginbtn">Log in</button>
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            </div>
+          <hr />
+          <div class="formbtns">
+            <button type="submit" class="form-btn">Log in</button>
+            <button type="button" id="cancelbtn1" class="form-cancel">
+              Cancel
+            </button>
+          </div>
         </form>
-        </div>
-        </header>
-        
-        <main id="home">
-            <section id="section1">
-                <h2>SECTIUNEA 1</h2>
-            </section>
-            <section id="section2">
-                <ul>
-                    <li><h2>Element lista 1</h2>
-                        <p>Descriere element. Descriere element. Descriere element. Descriere element. </p>
-                    </li>
-                    <li><h2>Element lista 2</h2>
-                    <p>Descriere element. Descriere element. Descriere element. Descriere element.
-                    </p>
-                    </li>
-                    <li><h2>Element lista 3</h2>
-                    <p>Descriere element. Descriere element. Descriere element. Descriere element.
-                    </p>
-                    </li>
-                </ul>
-            </section>
-            <section id="section3">
-                <p>img</p>
-            </section >
-            <section id="section4">
-                    <ul>
-                    <li><h2>Element lista 1</h2>
-                        <p>Descriere element. Descriere element. Descriere element. Descriere element.
-                        </p>
-                    </li>
-                    <li><h2>Element lista 2</h2>
-                        <p>Descriere element. Descriere element. Descriere element. Descriere element.
-                        </p>
-                    </li>
-                    <li><h2>Element lista 3</h2>
-                        <p>Descriere element. Descriere element. Descriere element. Descriere element.
-                        </p>
-                    </li>
-                    <li><h2>Element lista 4</h2>
-                        <p>Descriere element. Descriere element. Descriere element. Descriere element.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section id="section5">
-                <p>butoane</p>
-            </section>
-        </main>
-        
-        <footer>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      </div>
+    </header>
 
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p> </footer>
-    </body>
+    <main id="home">
+      <section id="section1">
+        <h2>SECTIUNEA 1</h2>
+      </section>
+      <section id="section2">
+        <ul>
+          <li>
+            <h2>Element lista 1</h2>
+            <p>
+              Descriere element. Descriere element. Descriere element. Descriere
+              element.
+            </p>
+          </li>
+          <li>
+            <h2>Element lista 2</h2>
+            <p>
+              Descriere element. Descriere element. Descriere element. Descriere
+              element.
+            </p>
+          </li>
+          <li>
+            <h2>Element lista 3</h2>
+            <p>
+              Descriere element. Descriere element. Descriere element. Descriere
+              element.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="section3">
+        <p>img</p>
+      </section>
+      <section id="section4">
+        <ul>
+          <li>
+            <h2>Element lista 1</h2>
+            <p>
+              Descriere element. Descriere element. Descriere element. Descriere
+              element.
+            </p>
+          </li>
+          <li>
+            <h2>Element lista 2</h2>
+            <p>
+              Descriere element. Descriere element. Descriere element. Descriere
+              element.
+            </p>
+          </li>
+          <li>
+            <h2>Element lista 3</h2>
+            <p>
+              Descriere element. Descriere element. Descriere element. Descriere
+              element.
+            </p>
+          </li>
+          <li>
+            <h2>Element lista 4</h2>
+            <p>
+              Descriere element. Descriere element. Descriere element. Descriere
+              element.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="section5">
+        <p>butoane</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+    </footer>
+    <button class="scrollToTopBtn">☝️</button>
+    <script src="scripts.js"></script>
+  </body>
 </html>
