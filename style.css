@@ -281,7 +281,7 @@ nav a:focus,
 }
 
 .form-cancel:hover,
-.formbtn:hover {
+.form-btn:hover {
   border-radius: 20px;
   transition: 0.25s;
   -webkit-transition: 0.25s;
