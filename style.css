@@ -134,16 +134,23 @@ nav a:focus,
 /* MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER  MOBILE HEADER */
 @media only screen and (max-width: 768px) {
   header {
-    grid-template-columns: 2fr 2.3337fr 1fr;
+    grid-template-columns: 0.6fr 2fr 2.7337fr;
   }
 
   .nav-toggle-label {
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: center;
-    grid-column: 3/4;
+    justify-content: flex-end;
+    grid-column: 1/2;
     cursor: pointer;
+  }
+
+  #logo{
+    grid-column: 2/3;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .nav-toggle-label span,
@@ -176,7 +183,7 @@ nav a:focus,
   }
 
   #buttons {
-    grid-column: 2/3;
+    grid-column: 3/4;
     justify-content: center;
   }
 
@@ -194,13 +201,14 @@ nav a:focus,
   }
 
   nav {
-    transform: scale(1, 0);
+    transform: scale(0, 1);
     transition: transform 400ms ease-in-out;
-    transform-origin: bottom;
+    transform-origin: left;
     background-color: white;
     position: fixed;
-    bottom: 0;
-    width: 100vw;
+    top: 3.9vh;
+    width: 33.33vw;
+    height: 100vh;
   }
 
   nav li {
@@ -240,7 +248,7 @@ nav a:focus,
 .modal input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
-  border-bottom: 2px dashed rgb(255, 204, 102);
+  border-bottom: 2px solid rgb(255, 204, 102);
   border-radius: 20px;
   transition: 0.25s;
   -webkit-transition: 0.25s;
