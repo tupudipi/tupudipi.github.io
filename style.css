@@ -513,7 +513,7 @@ footer {
   bottom: 0;
   text-align: center;
   background-color: rgb(193, 203, 222);
-  color: rgb(80, 80, 80);
+  color: rgb(255, 255, 255);
   z-index: 0;
   width: 100%;
 }
