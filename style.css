@@ -141,9 +141,10 @@ nav a:focus,
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     grid-column: 1/2;
     cursor: pointer;
+    margin-left: 10px;
   }
 
   #logo{
@@ -198,15 +199,16 @@ nav a:focus,
     display: flex;
     flex-direction: column;
     border-top: 2px solid cornflowerblue;
+    width:100%;
   }
 
   nav {
     transform: scale(0, 1);
-    transition: transform 400ms ease-in-out;
-    transform-origin: left;
+    /*transition: transform 250ms ease-out;
+    transform-origin: left; */
     background-color: white;
     position: fixed;
-    top: 3.9vh;
+    top: 0;
     width: 33.33vw;
     height: 100vh;
   }
@@ -214,7 +216,15 @@ nav a:focus,
   nav li {
     text-align: center;
     opacity: 0;
-    transition: opacity 150ms;
+   /* transition: opacity 150ms; */
+  }
+
+  nav li a{
+    width:85%;
+  }
+
+  nav li a:hover{
+    border-radius:0;
   }
 
   .nav-toggle:checked ~ nav {
@@ -503,7 +513,7 @@ footer {
   bottom: 0;
   text-align: center;
   background-color: rgb(193, 203, 222);
-  color: rgb(255, 255, 255);
+  color: rgb(80, 80, 80);
   z-index: 0;
   width: 100%;
 }
